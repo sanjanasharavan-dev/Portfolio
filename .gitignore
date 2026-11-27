@@ -1,0 +1,11 @@
+# Mac clutter
+.DS_Store
+
+# Full-size originals you drop in for Claude to process. The site uses the
+# compressed copies in images/, so these stay on your computer only.
+playground/
+
+# One-off upload zip and local tool settings
+portfolio-site.zip
+.claude/settings.local.json
+.vercel

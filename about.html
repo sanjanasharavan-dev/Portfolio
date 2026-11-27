@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About — Sanjana Sharavan</title>
+  <link rel="icon" href="assets/cat.svg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="page">
+    <section class="about-top">
+      <img class="about-photo" src="images/1yNfXj27pFM7vRDGYYHRV63OGUg.jpeg" alt="Sanjana standing in front of a blue shutter">
+
+      <div class="about-copy">
+        <h1 class="script">Hey, I’m Sanjana</h1>
+        <p>Over the past four years, I’ve led end-to-end design initiatives for global products, ranging from large-scale platforms like Ola to rapid MVPs for international startups. I bring senior ownership to complex product metrics, user psychology, and cross-functional alignment. My core focus is bridging the gap between product strategy and engineering execution to ship impactful user experiences.</p>
+        <p>When I'm not designing, you'll find me going on photo walks or<br>knee-deep in a DIY project.</p>
+      </div>
+
+      <!-- "Now playing" card. Click toggles play/stop (see site.js).
+           To play a real song, set data-audio to an audio file, e.g. data-audio="images/song.mp3" -->
+      <div class="player" role="button" tabindex="0" aria-pressed="true" data-audio=""
+           aria-label="Not a lot, just forever by Adrianne Lenker. Click to stop or play.">
+        <div class="cd" aria-hidden="true">
+          <div class="cd-scale">
+            <div class="cd-spin">
+              <img class="disc" src="images/3G3GxUOwnt8bROjh0OW5vHBxvr4.png" alt="" draggable="false">
+              <img class="label" src="images/nsrPYVTZMStiAxlUIkLPdy4uVI.png" alt="" draggable="false">
+            </div>
+          </div>
+        </div>
+        <div class="content">
+          <div class="bars" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+          <p class="artist">Adrianne Lenker</p>
+          <p class="song">Not a lot, just forever</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="gallery-head">
+        <h2 class="script">Gallery</h2>
+        <p>These side quests come with pictures</p>
+      </div>
+      <!-- Gallery: photos are listed once in GALLERY below; the script duplicates them for the infinite loop -->
+      <div class="marquee"><div class="marquee-track" id="gallery"></div></div>
+    </section>
+  </main>
+
+  <script>
+    const GALLERY = [
+      "bPOBuDAwaeqDqQHJwLoJQmB33I.jpg","h2PRibqjK3yEd6RqzjkucSSsNok.jpg","vqpj2aQeb1AH4YpITRghWfd3I8.jpg",
+      "qAg6GXPBW3BIlyN95yi2id8tpU.jpg","kHgSX7Selqerbf9rqEp6sPuP0.jpg","Yk6g1Ar8cEKsusB8EagO0lro.jpg",
+      "QUYfOxQsBgORaxjbt2Xapy2azy8.jpg","kYeDLd85en7TDuXExcTGEGyDk.jpg","Y8OvSPD4rEK7s7UvvIyDdBwPrw.jpg",
+      "JxXlNVVR6UqarQGliQMQbVdgVto.jpg","T0yjEpJvg5U5JkWoLKLa5dCV8.jpg","erd4HtLONbeDwbpW4Yctcy8mIF4.jpg",
+      "5HCG5ywHnNqED4Zr9BiMYjSk4.jpg","BZjtZUtNHdJrkYUliwnzsObz5bw.jpg","mfOLzL6sheVZ1aaXaTPeDLfRwXA.jpg",
+      "B4v597Y1gZmzS0v5pDooYEaUPPs.jpg","Yjw5d2AJuocWHUSRLIY5LBQLWk.jpg","kAecs19zhbiiDLRopXSD534cRKY.jpg",
+      "MGxgfX7zpHbG9e4qYvZjueQQh0.jpg","iMpViOxOs7MrijHhQjaNrmLgvUM.jpg","Mhk5cm00ajkPghUy4RZl4GXhMRA.jpg",
+      "AL5n7pHYlH80djwEWQG5g5ZLDY.jpg","pKBLxyHBi6728O4BzFndU3DkQ.png","xnNU16I0pNIfVk25TOZUKf6wJo0.jpg",
+      "Njr9XZm5jsDMeLAxbaxnVBBxgZE.jpg","xX0eZdnbITO52mbxxMUpG5Dybg.jpg","IB8xFqyBMmVrSv5NpmhXO1jcqs.jpg",
+      "1Iy53iAhHKwKgFX8YKcAQthObUM.png","14E8aTij6DuM3ti6XwGM36fW6qM.png","0I3rUJBDTApp6oAUdcfrcHhs.jpg",
+      "tn2z9BXYO9hQNJpbsSvPZIyNarE.jpg","KzYKGpbSkdIgmzGKu4DqS4hT8.png","GjGwxD1TFzgkWeE2ZlnQy6Atp4.jpg",
+      "pggHTB4gkzpiWynZqJMBioZnjDM.jpg","Rb4fPVrja4A5twbgGdgnG6HU0.jpg","G7LC8rFRyTtcxHjwaRD3GwCH0.png",
+      "HY0Ypyc6ACEBzSrzqabHR0xktU.jpg","UYXGaZjVoXNaIpIyj9jr4TWZ7LA.jpg","fMOZUHmweN45A4E1t6iR3u6c.jpg",
+      "NWU1g9J9SzpcRFLD8SBL4zrFqg.png","L2DRqZRJlsQpfoaNAHkjoICx9k.png","qGf4VYqrMMk4279CqeMBaDcDTk.jpg",
+      "OEumyNnhiPMfukoILv4ZF327gH8.jpg"
+    ].map(f => f.startsWith("http") || f.startsWith("assets/") ? f : "images/gallery/" + f);
+
+    const track = document.getElementById("gallery");
+    const imgs = GALLERY.map(src => `<img src="${src}" alt="" loading="lazy">`).join("");
+    track.innerHTML = imgs + imgs; // doubled so the -50% marquee loops seamlessly
+  </script>
+  <script src="site.js"></script>
+</body>
+</html>

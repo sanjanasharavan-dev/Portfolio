@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Playground — Sanjana Sharavan</title>
+  <link rel="icon" href="assets/cat.svg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="page">
+    <header class="section-head">
+      <h1 class="script">Playground</h1>
+    </header>
+
+    <!-- Projects: two side by side. To add one, copy a .project block (wrap in <a> if it links somewhere).
+         images/ is a build placeholder for the images folder. -->
+    <section class="projects">
+      <a class="project" href="https://www.indiantextiles.online/" target="_blank" rel="noopener">
+        <img src="images/playground-indian-textiles.jpg" alt="Documenting Indian Textiles — a canvas of textile swatches" loading="lazy">
+        <span class="project-title"><span class="t">Documenting Indian Textiles</span><svg class="project-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
+      </a>
+      <a class="project" href="https://bunkr.in/" target="_blank" rel="noopener">
+        <img src="images/playground-bunkr.jpg" alt="Bunkr — Swipe right on your next flatmate" loading="lazy">
+        <span class="project-title"><span class="t">Bunkr</span><svg class="project-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
+      </a>
+    </section>
+
+    <!-- Gallery: visual designs & web experiments. To add one, copy a <figure class="play-item"> block. -->
+    <section class="gallery">
+      <header class="section-head">
+        <h2 class="script">Gallery</h2>
+      </header>
+      <!-- Desktop (3 columns): data-col pins each item to a column (1 = left), top to bottom in this order.
+           Tablet/phone: items flow in this order into the shortest column. data-ratio = height ÷ width.
+           Mixed so videos and dark screens don't bunch up. -->
+      <div class="play-grid">
+      <figure class="play-item" data-col="1" data-ratio="0.595">
+        <video src="images/playground-rocktree.mp4" autoplay muted loop playsinline aria-label="Rocktree Capital — website walkthrough"></video>
+      </figure>
+      <figure class="play-item" data-col="2" data-ratio="0.708">
+        <img src="images/playground-sprout.jpg" alt="Sprout — artist showcase" loading="lazy">
+      </figure>
+      <figure class="play-item" data-col="3" data-ratio="0.534">
+        <video src="images/playground-tiles.mp4?v=2" autoplay muted loop playsinline aria-label="Athangudi tiles — interactive material archive"></video>
+      </figure>
+      <figure class="play-item" data-col="1" data-ratio="0.6275">
+        <img src="images/6F6cU2gimnVGGkcwfHLs1wvQxI.png" alt="Wellim — hotel booking" loading="lazy">
+      </figure>
+      <figure class="play-item" data-col="2" data-ratio="0.5625">
+        <img src="images/qwIzeGekQTnu7y3mP7SdqCUFaI.png" alt="Rocktree Capital — Blade Runner-inspired website" loading="lazy">
+      </figure>
+      <figure class="play-item" data-col="3" data-ratio="0.636">
+        <img src="images/SFSqfduZrAoWm6qTmvmxE1dluo.png" alt="Loans dashboard" loading="lazy">
+      </figure>
+      <figure class="play-item" data-col="1" data-ratio="0.75">
+        <img src="images/sQxwZEnJbaDixYklOiqFkUX5Y.png" alt="Magazine spread" loading="lazy">
+      </figure>
+      <figure class="play-item" data-col="2" data-ratio="1.073">
+        <img src="images/playground-feeding-india.jpg" alt="Feeding India — malnutrition campaign page" loading="lazy">
+      </figure>
+      <figure class="play-item" data-col="3" data-ratio="0.55">
+        <video src="images/playground-maps.mp4?v=2" autoplay muted loop playsinline aria-label="Ola Maps landing page"></video>
+      </figure>
+      <figure class="play-item" data-col="1" data-ratio="0.652">
+        <video src="images/FGvFjBKGZjFZMTDGXmRCafKFR64.mp4" autoplay muted loop playsinline aria-label="Gemach — GBOT website"></video>
+      </figure>
+      <figure class="play-item" data-col="3" data-ratio="0.743">
+        <img src="images/playground-ola.jpg" alt="Mars pod mission app — two phone screens" loading="lazy">
+      </figure>
+      </div>
+    </section>
+  </main>
+  <script src="site.js"></script>
+</body>
+</html>
