@@ -5,9 +5,9 @@ Hand-coded recreation of https://sanjanasharavan.framer.website/ — plain HTML,
 ## Files
 - `index.html` — Home: script name + cat doodle, intro, bento grid. Hierarchy: Work (largest) → Playground (tall but visually quiet) → Contact / About / Resume (equal small cards). Page content is centred, max 1241px wide. On desktop the home page fits one screen (see "HOME: FIT TO SCREEN" in styles.css). Sub-copy is regular weight, no bold.
 - `about.html` — Photo + bio, "now playing" vinyl card, infinite photo gallery marquee (edit the `GALLERY` array)
-- `work.html` — Selected case studies (cards that stack on scroll), Older work (list rows)
+- `work.html` — Selected case studies (cards that stack on scroll), Older work (list rows). Dotted floral pinned to the window's top-right corner (`canvas.work-floral`, `workFloral` in site.js: dots traced from the Framer artwork; blooms in on load, glitches on hover)
 - `playground.html` — Two projects side by side (`.projects`: Documenting Indian Textiles, Bunkr → bunkr.in; images `playground-*.jpg`, resized from the originals in `playground/`), then a "Gallery" heading over the masonry grid of visuals (copy a `<figure class="play-item">` to add one)
-- `contact.html` — "Let's Talk!", email + social pill buttons, café doodle
+- `contact.html` — "Let's Talk!", email + social pill buttons, café doodle redrawn as red dots (`canvas.contact-art`, `cafeDots` in site.js; hover: flower nods, hearts rise from beside the petals)
 - `styles.css` — all styling; design tokens live in `:root` at the top
 - `site.js` — renders the bottom dock nav on every page (edit `NAV` / `RESUME_URL`; Home, Work, Playground) and runs the line-boil glitch, music player, and stacking case cards
 - `assets/cat.svg` — the cat doodle (also used as favicon)
